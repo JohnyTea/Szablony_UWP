@@ -1,0 +1,83 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Szablony_UWP">
+
+    <!--Domyslny Przycisku-->
+    <Style TargetType="Button">
+        <Setter Property="Background" Value="Black"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="BorderBrush" Value="Red"/>
+        <Setter Property="BorderThickness" Value="3"/>
+        <Setter Property="FontSize" Value="48"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Content" Value="Domyslny"/>
+        <Setter Property="Height" Value="200"/>
+        <Setter Property="Width" Value="300"/>
+
+    </Style>
+    
+    <!--Domyslny Tekstu-->
+    <Style TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Times new Roman"/>
+        <Setter Property="Foreground" Value="Blue"/>
+        <Setter Property="FontStyle" Value="Oblique"/>
+        <Setter Property="FontSize" Value="48"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        <Setter Property="Text" Value="Domyslny"/>
+        <Setter Property="Height" Value="200"/>
+        <Setter Property="Width" Value="300"/>
+    </Style>
+
+    <!--Styl Słodki Buttoin-->
+    <Style x:Key="Słodki_button" TargetType="Button">
+        <Setter Property="Background" Value="Pink"/>
+        <Setter Property="Foreground" Value="Red"/>
+        <Setter Property="BorderBrush" Value="MediumPurple"/>
+        <Setter Property="BorderThickness" Value="2"/>
+        <Setter Property="FontSize" Value="48"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Content" Value="^^"/>
+        <Setter Property="Height" Value="200"/>
+        <Setter Property="Width" Value="300"/>
+    </Style>
+    
+    <!--Kolejny Styl-->
+    <Style x:Key="Trzeci_Styl" TargetType="Button">
+        <Setter Property="Background" Value="Purple"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="BorderBrush" Value="MediumPurple"/>
+        <Setter Property="BorderThickness" Value="10"/>
+        <Setter Property="FontSize" Value="80"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Content" Value="bla bla bla"/>
+        <Setter Property="Height" Value="200"/>
+        <Setter Property="Width" Value="300"/>
+    </Style>
+
+    <!--Szablon w kółku-->
+    <ControlTemplate x:Key="OkraglyPrzycisk" TargetType="Button">
+        <StackPanel  Background ="Purple" CornerRadius="90,90,90,90" BorderBrush="Black" BorderThickness="8">
+            <ContentPresenter  HorizontalAlignment="Center" VerticalAlignment="Center" />
+            
+        </StackPanel>
+        
+    </ControlTemplate>
+
+    <!--Styl bazujący na innym-->
+    <Style x:Key="stylBazujacyNaInnym" TargetType="Button" BasedOn="{StaticResource Słodki_button}">
+        <Setter Property="FontFamily" Value="Comic sans ms"/>
+        <Setter Property="FontSize" Value="68"/>
+        <Setter Property="Foreground" Value="Blue"/>
+    </Style>
+
+    
+
+</ResourceDictionary>
