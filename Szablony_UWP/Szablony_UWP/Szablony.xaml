@@ -19,7 +19,7 @@
         <Setter Property="Width" Value="300"/>
 
     </Style>
-    
+
     <!--Domyslny Tekstu-->
     <Style TargetType="TextBlock">
         <Setter Property="FontFamily" Value="Times new Roman"/>
@@ -47,7 +47,7 @@
         <Setter Property="Height" Value="200"/>
         <Setter Property="Width" Value="300"/>
     </Style>
-    
+
     <!--Kolejny Styl-->
     <Style x:Key="Trzeci_Styl" TargetType="Button">
         <Setter Property="Background" Value="Purple"/>
@@ -66,9 +66,9 @@
     <ControlTemplate x:Key="OkraglyPrzycisk" TargetType="Button">
         <StackPanel  Background ="Purple" CornerRadius="90,90,90,90" BorderBrush="Black" BorderThickness="8">
             <ContentPresenter  HorizontalAlignment="Center" VerticalAlignment="Center" />
-            
+
         </StackPanel>
-        
+
     </ControlTemplate>
 
     <!--Styl bazujący na innym-->
@@ -78,6 +78,6 @@
         <Setter Property="Foreground" Value="Blue"/>
     </Style>
 
-    
+
 
 </ResourceDictionary>

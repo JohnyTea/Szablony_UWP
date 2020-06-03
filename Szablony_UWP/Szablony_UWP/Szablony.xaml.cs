@@ -26,5 +26,10 @@ namespace Szablony_UWP
         {
             this.InitializeComponent();
         }
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
     }
+
 }
